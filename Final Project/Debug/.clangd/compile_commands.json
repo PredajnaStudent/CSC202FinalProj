@@ -1,0 +1,42 @@
+[
+   {
+      "directory" : "C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/Debug",
+      "command"   : "clang++ -I\"C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project\" -I\"C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/Debug\" -I\"C:/ti/mspm0_sdk_2_00_01_00/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_00_01_00/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib/clang/15.0.7/include\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c\"",
+      "file"      : "C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/LaunchPad.c"
+   },
+   {
+      "directory" : "C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/Debug",
+      "command"   : "clang++ -I\"C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project\" -I\"C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/Debug\" -I\"C:/ti/mspm0_sdk_2_00_01_00/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_00_01_00/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib/clang/15.0.7/include\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c\"",
+      "file"      : "C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/adc.c"
+   },
+   {
+      "directory" : "C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/Debug",
+      "command"   : "clang++ -I\"C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project\" -I\"C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/Debug\" -I\"C:/ti/mspm0_sdk_2_00_01_00/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_00_01_00/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib/clang/15.0.7/include\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c\"",
+      "file"      : "C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/clock.c"
+   },
+   {
+      "directory" : "C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/Debug",
+      "command"   : "clang++ -I\"C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project\" -I\"C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/Debug\" -I\"C:/ti/mspm0_sdk_2_00_01_00/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_00_01_00/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib/clang/15.0.7/include\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c\"",
+      "file"      : "C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/lcd1602.c"
+   },
+   {
+      "directory" : "C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/Debug",
+      "command"   : "clang++ -I\"C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project\" -I\"C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/Debug\" -I\"C:/ti/mspm0_sdk_2_00_01_00/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_00_01_00/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib/clang/15.0.7/include\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c\"",
+      "file"      : "C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/main.c"
+   },
+   {
+      "directory" : "C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/Debug",
+      "command"   : "clang++ -I\"C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project\" -I\"C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/Debug\" -I\"C:/ti/mspm0_sdk_2_00_01_00/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_00_01_00/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib/clang/15.0.7/include\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c\"",
+      "file"      : "C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/spi.c"
+   },
+   {
+      "directory" : "C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/Debug",
+      "command"   : "clang++ -I\"C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project\" -I\"C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/Debug\" -I\"C:/ti/mspm0_sdk_2_00_01_00/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_00_01_00/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib/clang/15.0.7/include\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c\"",
+      "file"      : "C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/ticlang/startup_mspm0g3507_ticlang.c"
+   },
+   {
+      "directory" : "C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/Debug",
+      "command"   : "clang++ -I\"C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project\" -I\"C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/Debug\" -I\"C:/ti/mspm0_sdk_2_00_01_00/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_00_01_00/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib/clang/15.0.7/include\" -isystem\"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c\"",
+      "file"      : "C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final Project/uart.c"
+   }
+]
