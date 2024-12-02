@@ -30,8 +30,8 @@ uart.o: ../uart.c C:/ti/mspm0_sdk_2_00_01_00/source/ti/devices/msp/msp.h \
  C:/ti/mspm0_sdk_2_00_01_00/source/ti/devices/msp/peripherals/m0p/hw_debugss.h \
  C:/ti/mspm0_sdk_2_00_01_00/source/ti/devices/msp/peripherals/m0p/hw_sysctl.h \
  C:/ti/mspm0_sdk_2_00_01_00/source/ti/devices/msp/peripherals/m0p/sysctl/hw_sysctl_mspm0g1x0x_g3x0x.h \
- C:/Users/npredajna/OneDrive\ -\ Monroe\ Community\ College/CSC202_Workspace_Git/default_project/uart.h \
- C:/Users/npredajna/OneDrive\ -\ Monroe\ Community\ College/CSC202_Workspace_Git/default_project/clock.h
+ C:/Users/npredajna/OneDrive\ -\ Monroe\ Community\ College/CSC202FinalProjGit/Final\ Project/uart.h \
+ C:/Users/npredajna/OneDrive\ -\ Monroe\ Community\ College/CSC202FinalProjGit/Final\ Project/clock.h
 
 C:/ti/mspm0_sdk_2_00_01_00/source/ti/devices/msp/msp.h:
 
@@ -93,6 +93,6 @@ C:/ti/mspm0_sdk_2_00_01_00/source/ti/devices/msp/peripherals/m0p/hw_sysctl.h:
 
 C:/ti/mspm0_sdk_2_00_01_00/source/ti/devices/msp/peripherals/m0p/sysctl/hw_sysctl_mspm0g1x0x_g3x0x.h:
 
-C:/Users/npredajna/OneDrive\ -\ Monroe\ Community\ College/CSC202_Workspace_Git/default_project/uart.h:
+C:/Users/npredajna/OneDrive\ -\ Monroe\ Community\ College/CSC202FinalProjGit/Final\ Project/uart.h:
 
-C:/Users/npredajna/OneDrive\ -\ Monroe\ Community\ College/CSC202_Workspace_Git/default_project/clock.h:
+C:/Users/npredajna/OneDrive\ -\ Monroe\ Community\ College/CSC202FinalProjGit/Final\ Project/clock.h:
