@@ -67,7 +67,7 @@ led_enable();
 
 bool flag = 0;
 while (flag == 0)
-{motor1_set_pwm_count(3900);}
+{motor1_set_pwm_count(3500);}
 
 
 
