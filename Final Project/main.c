@@ -27,6 +27,7 @@
 #include "LaunchPad.h"
 #include "clock.h"
 #include "ti/devices/msp/m0p/mspm0g350x.h"
+#include "ti/devices/msp/peripherals/hw_iomux.h"
 
 
 //-----------------------------------------------------------------------------
@@ -52,9 +53,22 @@ void motor1_set_pwm_count(uint32_t count_value);
 
 int main(void)
 {
+launchpad_gpio_init();
+led_init();
+motor0_init();
+clock_init_40mhz();
 motor1_init();
 motor1_pwm_init(Motor1_LOAD_VALUE, 0);
 motor1_pwm_enable();
+
+led_enable();
+
+
+
+bool flag = 0;
+while (flag == 0)
+{motor1_set_pwm_count(3900);}
+
 
 
  // Endless loop to prevent program from ending
@@ -101,7 +115,7 @@ void motor1_pwm_init(uint32_t load_value, uint32_t compare_value)
 
   // Set action for compare
   // On Zero, set output HIGH; On Compares up, set output LOW
-  TIMA1->COUNTERREGS.CCACT_01[1] = (GPTIMER_CCACT_01_FENACT_DISABLED | 
+  TIMA1->COUNTERREGS.CCACT_01[0] = (GPTIMER_CCACT_01_FENACT_DISABLED | 
         GPTIMER_CCACT_01_CC2UACT_DISABLED | GPTIMER_CCACT_01_CC2DACT_DISABLED |
         GPTIMER_CCACT_01_CUACT_CCP_LOW | GPTIMER_CCACT_01_CDACT_DISABLED | 
         GPTIMER_CCACT_01_LACT_DISABLED | GPTIMER_CCACT_01_ZACT_CCP_HIGH);
@@ -110,13 +124,13 @@ void motor1_pwm_init(uint32_t load_value, uint32_t compare_value)
   TIMA1->COUNTERREGS.LOAD = GPTIMER_LOAD_LD_MASK & (load_value - 1);
 
   // set timer compare value
-  TIMA1->COUNTERREGS.CC_01[1] = GPTIMER_CC_01_CCVAL_MASK & compare_value;
+  TIMA1->COUNTERREGS.CC_01[0] = GPTIMER_CC_01_CCVAL_MASK & compare_value;
 
   // set compare control for PWM func with output initially low
-  TIMA1->COUNTERREGS.OCTL_01[1] = (GPTIMER_OCTL_01_CCPIV_LOW | 
+  TIMA1->COUNTERREGS.OCTL_01[0] = (GPTIMER_OCTL_01_CCPIV_LOW | 
                 GPTIMER_OCTL_01_CCPOINV_NOINV | GPTIMER_OCTL_01_CCPO_FUNCVAL);
   //
-  TIMA1->COUNTERREGS.CCCTL_01[1] = GPTIMER_CCCTL_01_CCUPD_IMMEDIATELY;
+  TIMA1->COUNTERREGS.CCCTL_01[0] = GPTIMER_CCCTL_01_CCUPD_IMMEDIATELY;
 
 
   // When enabled load 0, set timer to count up
@@ -142,5 +156,5 @@ void motor1_pwm_enable(void)
 
 void motor1_set_pwm_count(uint32_t count)
 {
-  TIMA1->COUNTERREGS.CC_01[1] = GPTIMER_CC_01_CCVAL_MASK & count;
+  TIMA1->COUNTERREGS.CC_01[0] = GPTIMER_CC_01_CCVAL_MASK & count;
 } /* motor0_set_pwm_count */
