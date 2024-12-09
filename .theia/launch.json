@@ -6,6 +6,18 @@
             "type": "ccs-debug",
             "request": "launch",
             "project": "Final Project"
+        },
+        {
+            "name": "adc_test",
+            "type": "ccs-debug",
+            "request": "launch",
+            "project": "adc_test"
+        },
+        {
+            "name": "Final_Project_motor_servo_WORKING",
+            "type": "ccs-debug",
+            "request": "launch",
+            "project": "Final_Project_motor_servo_WORKING"
         }
     ]
 }
