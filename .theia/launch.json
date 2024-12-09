@@ -14,10 +14,10 @@
             "project": "adc_test"
         },
         {
-            "name": "Final_Project_motor_servo_WORKING",
+            "name": "adc_motor_test",
             "type": "ccs-debug",
             "request": "launch",
-            "project": "Final_Project_motor_servo_WORKING"
+            "project": "adc_motor_test"
         }
     ]
 }

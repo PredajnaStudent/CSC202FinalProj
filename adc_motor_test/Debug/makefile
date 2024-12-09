@@ -4,7 +4,7 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS
+CG_TOOL_ROOT := C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS
 
 GEN_OPTS__FLAG := 
 GEN_CMDS__FLAG := 
@@ -129,21 +129,21 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXE_OUTPUTS += \
-Final_Project_motor_servo_WORKING.out 
+adc_motor_test.out 
 
 EXE_OUTPUTS__QUOTED += \
-"Final_Project_motor_servo_WORKING.out" 
+"adc_motor_test.out" 
 
 
 # All Target
 all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
-	@$(MAKE) --no-print-directory -Onone "Final_Project_motor_servo_WORKING.out"
+	@$(MAKE) --no-print-directory -Onone "adc_motor_test.out"
 
 # Tool invocations
-Final_Project_motor_servo_WORKING.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
+adc_motor_test.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: Arm Linker'
-	"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -D__MSPM0G3507__ -gdwarf-3 -Wl,-m"Final_Project_motor_servo_WORKING.map" -Wl,--heap_size=0x800 -Wl,--stack_size=512 -Wl,-i"C:/ti/mspm0_sdk_2_00_01_00/source" -Wl,-i"C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final_Project_motor_servo_WORKING" -Wl,-i"C:/Users/npredajna/OneDrive - Monroe Community College/CSC202FinalProjGit/Final_Project_motor_servo_WORKING/Debug/syscfg" -Wl,-i"C:/ti/ccstheia140/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="Final_Project_motor_servo_WORKING_linkInfo.xml" -Wl,--rom_model -o "Final_Project_motor_servo_WORKING.out" $(ORDERED_OBJS)
+	"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/bin/tiarmclang.exe" -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -D__MSPM0G3507__ -gdwarf-3 -Wl,-m"adc_motor_test.map" -Wl,--heap_size=0x800 -Wl,--stack_size=512 -Wl,-i"C:/ti/mspm0_sdk_2_01_00_03/source" -Wl,-i"C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/adc_motor_test" -Wl,-i"C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/adc_motor_test/Debug/syscfg" -Wl,-i"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="adc_motor_test_linkInfo.xml" -Wl,--rom_model -o "adc_motor_test.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
