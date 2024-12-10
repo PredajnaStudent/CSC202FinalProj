@@ -1,0 +1,42 @@
+[
+   {
+      "directory" : "C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/Debug",
+      "command"   : "clang++ -I\"C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished\" -I\"C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/Debug\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib/clang/15.0.7/include\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c\"",
+      "file"      : "C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/Car_Simulator.c"
+   },
+   {
+      "directory" : "C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/Debug",
+      "command"   : "clang++ -I\"C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished\" -I\"C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/Debug\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib/clang/15.0.7/include\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c\"",
+      "file"      : "C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/LaunchPad.c"
+   },
+   {
+      "directory" : "C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/Debug",
+      "command"   : "clang++ -I\"C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished\" -I\"C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/Debug\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib/clang/15.0.7/include\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c\"",
+      "file"      : "C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/adc.c"
+   },
+   {
+      "directory" : "C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/Debug",
+      "command"   : "clang++ -I\"C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished\" -I\"C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/Debug\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib/clang/15.0.7/include\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c\"",
+      "file"      : "C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/clock.c"
+   },
+   {
+      "directory" : "C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/Debug",
+      "command"   : "clang++ -I\"C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished\" -I\"C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/Debug\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib/clang/15.0.7/include\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c\"",
+      "file"      : "C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/lcd1602.c"
+   },
+   {
+      "directory" : "C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/Debug",
+      "command"   : "clang++ -I\"C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished\" -I\"C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/Debug\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib/clang/15.0.7/include\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c\"",
+      "file"      : "C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/spi.c"
+   },
+   {
+      "directory" : "C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/Debug",
+      "command"   : "clang++ -I\"C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished\" -I\"C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/Debug\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib/clang/15.0.7/include\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c\"",
+      "file"      : "C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/ticlang/startup_mspm0g3507_ticlang.c"
+   },
+   {
+      "directory" : "C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/Debug",
+      "command"   : "clang++ -I\"C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished\" -I\"C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/Debug\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/lib/clang/15.0.7/include\" -isystem\"C:/ti/ccstheia141/ccs/tools/compiler/ti-cgt-armllvm_3.2.2.LTS/include/c\"",
+      "file"      : "C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/uart.c"
+   }
+]
