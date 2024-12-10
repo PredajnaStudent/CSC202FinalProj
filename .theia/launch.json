@@ -14,10 +14,10 @@
             "project": "adc_test"
         },
         {
-            "name": "adc_motor_test",
+            "name": "FinalProject_UartStarted",
             "type": "ccs-debug",
             "request": "launch",
-            "project": "adc_motor_test"
+            "project": "FinalProject_UartStarted"
         }
     ]
 }
