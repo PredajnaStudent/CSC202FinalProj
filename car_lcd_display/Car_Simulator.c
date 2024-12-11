@@ -140,8 +140,8 @@ uint8_t volume_menu_selected(uint16_t dash_submenu_input, uint8_t volume);
 // Define global variables and structures here.
 // NOTE: when possible avoid using global variables
 //-----------------------------------------------------------------------------
-bool g_pb2_pressed = 0;
-bool g_pb1_pressed = 0;
+bool g_run = true;
+bool g_neutral = false;
 uint32_t g_Odometer = 0;
 uint16_t g_motor_speed;
 
@@ -190,10 +190,9 @@ int main(void)
   uint8_t volume = 50;
   uint8_t drive_gear;
   uint8_t motor_pwm;
-  bool neutral = 0;
   bool headlight_override = false;
   bool cruise_control = false;
-  bool run = true;
+  
 
   char* lcd_speed_message = "S:";
   char* lcd_mileage_message = "M:";
@@ -201,17 +200,15 @@ int main(void)
   char* lcd_cruise_control_message = "CC";
   char* playing = NEUTRAL_PLAYING_NOTHING;
   
-  while(run)
-  {
+  while(g_run)
+{
     gear = dipsw_read();
     joystick_x = ADC1_in(6); 
     joystick_y = ADC1_in(4); 
     ADC_light_value = ADC0_in(7); 
     drive_gear = (gear >> 1);
-    if(g_pb2_pressed == 1)
-    {
-      run = false;
-    }
+
+    
 
     servo_pwm = ADC_TO_SERVO_COUNT(joystick_x);
     motor1_set_pwm_count(servo_pwm);
@@ -233,7 +230,7 @@ int main(void)
     }
     else if (g_pb1_pressed == true)
     {
-      neutral = 1;
+      g_neutral = 1;
       g_pb1_pressed = false;
     }
     else
@@ -306,12 +303,10 @@ int main(void)
 
     msec_delay(50);
     
-    if (neutral)
+    if (g_neutral)
     {
-     while (neutral)
+     while (g_neutral)
     {
-        if(g_pb2_pressed == 1)
-        {run = 0;  neutral =0 ;}
 
         display_main_menu(playing, volume);
         dash_input = UART_in_char();
@@ -319,8 +314,7 @@ int main(void)
       switch (dash_input)
         {
           case SPOTIFY_MENU:
-                  if(g_pb2_pressed == 1)
-                    {run = 0;  neutral =0 ; break;}
+
                 display_spotify_menu();
                 dash_submenu_input = UART_in_char();
                 UART_out_char(dash_submenu_input);
@@ -328,8 +322,7 @@ int main(void)
           break;/* Access Spotify menu */
 
           case RADIO_MENU:
-                  if(g_pb2_pressed == 1)
-                    {run = 0;  neutral =0 ; break;}
+
                 display_radio_menu();
                 dash_submenu_input = UART_in_char();
                 UART_out_char(dash_submenu_input);
@@ -339,8 +332,7 @@ int main(void)
 
 
           case VOLUME_MENU:
-                  if(g_pb2_pressed == 1)
-                    {run = 0;  neutral =0 ; break;}
+
                 display_volume_menu(playing, volume);
                 dash_submenu_input = UART_in_char();
                 UART_out_char(dash_submenu_input);
@@ -349,7 +341,7 @@ int main(void)
 
 
           case SHIFT_INTO_GEAR:
-            neutral = 0;
+            g_neutral = false;
           break; /* Shift back into gear */
 
           default:
@@ -714,7 +706,7 @@ do
             gpio_mis = GPIOA->CPU_INT.MIS;
             if ((gpio_mis & GPIO_CPU_INT_MIS_DIO15_MASK) == GPIO_CPU_INT_MIS_DIO15_SET)
             {
-                 g_pb2_pressed = true;  //flags that pb2 was pressed
+                 g_run = false;  //flags that pb2 was pressed
 
                  GPIOA->CPU_INT.ICLR = GPIO_CPU_INT_ICLR_DIO15_CLR;
             }
@@ -724,7 +716,7 @@ do
             gpio_mis = GPIOB->CPU_INT.MIS;
             if((gpio_mis & GPIO_CPU_INT_MIS_DIO18_MASK) == GPIO_CPU_INT_MIS_DIO18_SET)
             {
-                 g_pb1_pressed = true; //flags that pb1 was pressed
+                 g_neutral = true; //flags that pb1 was pressed
 
                  GPIOB->CPU_INT.ICLR = GPIO_CPU_INT_ICLR_DIO18_CLR;  
             }
