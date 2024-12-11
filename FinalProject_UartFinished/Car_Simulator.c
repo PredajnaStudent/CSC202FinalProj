@@ -256,10 +256,11 @@ int main(void)
 
     if (g_neutral)
     {
+     motor0_set_pwm_dc(motor_pwm);
      while (g_neutral)
     {
 
-
+        servo_pwm = ADC_TO_SERVO_COUNT(joystick_x);
         display_main_menu(playing, volume);
         dash_input = UART_in_char();
         UART_out_char(dash_input);

@@ -30,8 +30,8 @@ spi.o: ../spi.c C:/ti/mspm0_sdk_2_01_00_03/source/ti/devices/msp/msp.h \
  C:/ti/mspm0_sdk_2_01_00_03/source/ti/devices/msp/peripherals/m0p/hw_debugss.h \
  C:/ti/mspm0_sdk_2_01_00_03/source/ti/devices/msp/peripherals/m0p/hw_sysctl.h \
  C:/ti/mspm0_sdk_2_01_00_03/source/ti/devices/msp/peripherals/m0p/sysctl/hw_sysctl_mspm0g1x0x_g3x0x.h \
- C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartStarted/clock.h \
- C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartStarted/spi.h
+ C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/clock.h \
+ C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/spi.h
 
 C:/ti/mspm0_sdk_2_01_00_03/source/ti/devices/msp/msp.h:
 
@@ -93,6 +93,6 @@ C:/ti/mspm0_sdk_2_01_00_03/source/ti/devices/msp/peripherals/m0p/hw_sysctl.h:
 
 C:/ti/mspm0_sdk_2_01_00_03/source/ti/devices/msp/peripherals/m0p/sysctl/hw_sysctl_mspm0g1x0x_g3x0x.h:
 
-C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartStarted/clock.h:
+C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/clock.h:
 
-C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartStarted/spi.h:
+C:/Users/Johnh/Desktop/CSC202FinalProjGIT(home)/FinalProject_UartFinished/spi.h:
