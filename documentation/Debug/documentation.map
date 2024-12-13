@@ -1,0 +1,631 @@
+******************************************************************************
+            TI ARM Clang Linker PC v3.2.2                      
+******************************************************************************
+>> Linked Fri Dec 13 13:27:51 2024
+
+OUTPUT FILE NAME:   <documentation.out>
+ENTRY POINT SYMBOL: "_c_int00_noargs"  address: 0000234d
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  FLASH                 00000000   00020000  00002990  0001d670  R  X
+  SRAM                  20200000   00008000  00000a0d  000075f3  RW X
+  BCR_CONFIG            41c00000   00000080  00000000  00000080  R   
+  BSL_CONFIG            41c00100   00000080  00000000  00000080  R   
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+00000000    00000000    00002990   00002990    r-x
+  00000000    00000000    000000c0   000000c0    r-- .intvecs
+  000000c0    000000c0    000024b8   000024b8    r-x .text
+  00002578    00002578    000003e0   000003e0    r-- .rodata
+  00002958    00002958    00000038   00000038    r-- .cinit
+20200000    20200000    0000080e   00000000    rw-
+  20200000    20200000    00000800   00000000    rw- .sysmem
+  20200800    20200800    0000000b   00000000    rw- .data
+  2020080c    2020080c    00000002   00000000    rw- .bss
+20207e00    20207e00    00000200   00000000    rw-
+  20207e00    20207e00    00000200   00000000    rw- .stack
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.intvecs   0    00000000    000000c0     
+                  00000000    000000c0     startup_mspm0g3507_ticlang.o (.intvecs)
+
+.text      0    000000c0    000024b8     
+                  000000c0    000003cc     car_simulator.o (.text.run_car_simulation)
+                  0000048c    000001b0     car_simulator.o (.text.radio_menu_selected)
+                  0000063c    00000192     libclang_rt.builtins.a : adddf3.S.obj (.text.adddf3_subdf3)
+                  000007ce    00000002                            : aeabi_div0.c.obj (.text.__aeabi_idiv0)
+                  000007d0    00000168     clock.o (.text.clock_init_40mhz)
+                  00000938    00000138     car_simulator.o (.text.spotify_menu_selected)
+                  00000a70    0000010c     libclang_rt.builtins.a : divdf3.S.obj (.text.__divdf3)
+                  00000b7c    000000e4                            : muldf3.S.obj (.text.__muldf3)
+                  00000c60    000000d4     adc.o (.text.ADC0_init)
+                  00000d34    000000d4     car_simulator.o (.text.ADC1_init)
+                  00000e08    000000d4     uart.o (.text.UART_init)
+                  00000edc    000000d0     LaunchPad.o (.text.leds_off)
+                  00000fac    000000c4     lcd1602.o (.text.lcd1602_init)
+                  00001070    000000c0     lcd1602.o (.text.lcd1602_write)
+                  00001130    000000c0     car_simulator.o (.text.volume_menu_selected)
+                  000011f0    000000bc     LaunchPad.o (.text.I2C_init)
+                  000012ac    000000b8     car_simulator.o (.text.display_volume_menu)
+                  00001364    000000b4     LaunchPad.o (.text.led_off)
+                  00001418    000000b4     LaunchPad.o (.text.led_on)
+                  000014cc    000000ac     LaunchPad.o (.text.led_init)
+                  00001578    000000ac     LaunchPad.o (.text.motor0_pwm_init)
+                  00001624    000000ac     car_simulator.o (.text.motor1_pwm_init)
+                  000016d0    000000a8     car_simulator.o (.text.display_main_menu)
+                  00001778    000000a8     car_simulator.o (.text.main)
+                  00001820    00000094     LaunchPad.o (.text.I2C_send1)
+                  000018b4    00000090     car_simulator.o (.text.GROUP1_IRQHandler)
+                  00001944    00000090     car_simulator.o (.text.display_radio_menu)
+                  000019d4    0000008c     LaunchPad.o (.text.is_lpsw_down)
+                  00001a60    0000008c     LaunchPad.o (.text.is_lpsw_up)
+                  00001aec    00000084     car_simulator.o (.text.__NVIC_SetPriority)
+                  00001b70    0000007c     lcd1602.o (.text.byte_to_ascii)
+                  00001bec    00000078     libc.a : copy_decompress_lzss.c.obj (.text:decompress:lzss)
+                  00001c64    00000070     car_simulator.o (.text.display_spotify_menu)
+                  00001cd4    00000070     lcd1602.o (.text.quadbyte_to_ascii)
+                  00001d44    00000068     adc.o (.text.ADC0_in)
+                  00001dac    00000068     car_simulator.o (.text.ADC1_in)
+                  00001e14    0000005c     LaunchPad.o (.text.I2C_fill_tx_fifo)
+                  00001e70    00000054     car_simulator.o (.text.OPA0_init)
+                  00001ec4    0000004c     LaunchPad.o (.text.dipsw_init)
+                  00001f10    0000004a     libclang_rt.builtins.a : fixdfsi.S.obj (.text.__fixdfsi)
+                  00001f5a    00000002     --HOLE-- [fill = 0]
+                  00001f5c    00000048     car_simulator.o (.text.SysTick_Handler)
+                  00001fa4    00000042     libclang_rt.builtins.a : fixunsdfsi.S.obj (.text.__fixunsdfsi)
+                  00001fe6    00000002     --HOLE-- [fill = 0]
+                  00001fe8    00000040                            : aeabi_uidivmod.S.obj (.text.__aeabi_uidivmod)
+                  00002028    0000003c     libc.a : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit)
+                  00002064    0000003a     libclang_rt.builtins.a : muldsi3.S.obj (.text.__muldsi3)
+                  0000209e    00000002     --HOLE-- [fill = 0]
+                  000020a0    00000038     LaunchPad.o (.text.launchpad_gpio_init)
+                  000020d8    00000034     car_simulator.o (.text.__NVIC_DisableIRQ)
+                  0000210c    00000034     car_simulator.o (.text.config_pb1_interrupt)
+                  00002140    00000034     car_simulator.o (.text.config_pb2_interrupt)
+                  00002174    00000034     LaunchPad.o (.text.motor0_init)
+                  000021a8    00000034     clock.o (.text.msec_delay)
+                  000021dc    00000034     clock.o (.text.sys_tick_init)
+                  00002210    00000032     car_simulator.o (.text.terminal_string)
+                  00002242    00000002     --HOLE-- [fill = 0]
+                  00002244    00000030     lcd1602.o (.text.lcd_write_quadbyte)
+                  00002274    0000002c     uart.o (.text.UART_out_char)
+                  000022a0    0000002c     car_simulator.o (.text.__NVIC_EnableIRQ)
+                  000022cc    0000002c     libclang_rt.builtins.a : floatsidf.S.obj (.text.__floatsidf)
+                  000022f8    0000002c     LaunchPad.o (.text.motor0_set_pwm_dc)
+                  00002324    00000028     lcd1602.o (.text.lcd_write_byte)
+                  0000234c    00000028     libc.a : boot_cortex_m.c.obj (.text:_c_int00_noargs)
+                  00002374    00000024     libclang_rt.builtins.a : floatunsidf.S.obj (.text.__floatunsidf)
+                  00002398    00000024     lcd1602.o (.text.lcd_write_string)
+                  000023bc    00000020     uart.o (.text.UART_in_char)
+                  000023dc    00000020     lcd1602.o (.text.lcd_set_ddram_addr)
+                  000023fc    00000020     lcd1602.o (.text.lcd_set_display_on)
+                  0000241c    0000001c     LaunchPad.o (.text.lpsw_init)
+                  00002438    0000001c     clock.o (.text.sys_tick_disable)
+                  00002454    00000018     lcd1602.o (.text.lcd_write_char)
+                  0000246c    00000018     LaunchPad.o (.text.led_enable)
+                  00002484    00000018     car_simulator.o (.text.motor1_init)
+                  0000249c    00000016     libc.a : copy_zero_init.c.obj (.text:decompress:ZI:__TI_zero_init_nomemset)
+                  000024b2    00000002     --HOLE-- [fill = 0]
+                  000024b4    00000014     car_simulator.o (.text.motor1_set_pwm_count)
+                  000024c8    00000012     libc.a : memcpy16.S.obj (.text:TI_memcpy_small)
+                  000024da    00000012            : copy_decompress_none.c.obj (.text:decompress:none)
+                  000024ec    00000010     clock.o (.text.clock_delay)
+                  000024fc    00000010     LaunchPad.o (.text.motor0_pwm_disable)
+                  0000250c    00000010     LaunchPad.o (.text.motor0_pwm_enable)
+                  0000251c    00000010     car_simulator.o (.text.motor1_pwm_disable)
+                  0000252c    00000010     car_simulator.o (.text.motor1_pwm_enable)
+                  0000253c    0000000e     lcd1602.o (.text.lcd_clear)
+                  0000254a    00000002     --HOLE-- [fill = 0]
+                  0000254c    0000000c     clock.o (.text.get_bus_clock_freq)
+                  00002558    00000008     libclang_rt.builtins.a : aeabi_memcpy.S.obj (.text.__aeabi_memcpy)
+                  00002560    00000004     startup_mspm0g3507_ticlang.o (.text.Default_Handler)
+                  00002564    00000004     startup_mspm0g3507_ticlang.o (.text.HardFault_Handler)
+                  00002568    00000004     startup_mspm0g3507_ticlang.o (.text.Reset_Handler)
+                  0000256c    00000004     libc.a : pre_init.c.obj (.text._system_pre_init)
+                  00002570    00000004            : exit.c.obj (.text:abort)
+                  00002574    00000004     --HOLE-- [fill = 0]
+
+.cinit     0    00002958    00000038     
+                  00002958    0000000e     (.cinit..data.load) [load image, compression = lzss]
+                  00002966    00000002     --HOLE-- [fill = 0]
+                  00002968    0000000c     (__TI_handler_table)
+                  00002974    00000008     (.cinit..bss.load) [load image, compression = zero_init]
+                  0000297c    00000010     (__TI_cinit_table)
+                  0000298c    00000004     --HOLE-- [fill = 0]
+
+.rodata    0    00002578    000003e0     
+                  00002578    00000060     LaunchPad.o (.rodata.led_config_data)
+                  000025d8    0000003c     LaunchPad.o (.rodata.enable_controls)
+                  00002614    00000031     car_simulator.o (.rodata.str1.116040323836234164831)
+                  00002645    00000003     car_simulator.o (.rodata.str1.161647209041722375641)
+                  00002648    00000030     LaunchPad.o (.rodata.dip_switch_config_data)
+                  00002678    0000002c     car_simulator.o (.rodata.str1.80296315736150907311)
+                  000026a4    00000027     car_simulator.o (.rodata.str1.40491378272681692911)
+                  000026cb    00000022     car_simulator.o (.rodata.str1.58133733967266419041)
+                  000026ed    0000001e     car_simulator.o (.rodata.str1.23975587637022945841)
+                  0000270b    0000001a     car_simulator.o (.rodata.str1.165154383461664653681)
+                  00002725    0000001a     car_simulator.o (.rodata.str1.30165358786537854901)
+                  0000273f    0000001a     car_simulator.o (.rodata.str1.63197497672065026841)
+                  00002759    0000001a     car_simulator.o (.rodata.str1.98212668636044290041)
+                  00002773    00000001     --HOLE-- [fill = 0]
+                  00002774    00000018     LaunchPad.o (.rodata.iic_config_data)
+                  0000278c    00000018     LaunchPad.o (.rodata.lp_switch_config_data)
+                  000027a4    00000018     car_simulator.o (.rodata.str1.103689823461257887761)
+                  000027bc    00000018     car_simulator.o (.rodata.str1.179592863022383598671)
+                  000027d4    00000018     car_simulator.o (.rodata.str1.87596174291108107791)
+                  000027ec    00000017     car_simulator.o (.rodata.str1.142732421847066183111)
+                  00002803    00000016     car_simulator.o (.rodata.str1.55996801367884046591)
+                  00002819    00000015     car_simulator.o (.rodata.str1.130317371255762518661)
+                  0000282e    00000013     car_simulator.o (.rodata.str1.110677666210460731541)
+                  00002841    00000013     car_simulator.o (.rodata.str1.176258565893542942101)
+                  00002854    00000013     car_simulator.o (.rodata.str1.75699286647744898621)
+                  00002867    00000012     car_simulator.o (.rodata.str1.75556660742290324581)
+                  00002879    00000012     car_simulator.o (.rodata.str1.98995258895984854061)
+                  0000288b    00000011     car_simulator.o (.rodata.str1.140205647397677164871)
+                  0000289c    00000011     car_simulator.o (.rodata.str1.143350027825000650381)
+                  000028ad    00000011     car_simulator.o (.rodata.str1.17254564258484956481)
+                  000028be    00000011     car_simulator.o (.rodata.str1.17613286307111500861)
+                  000028cf    00000011     car_simulator.o (.rodata.str1.30439863313260969641)
+                  000028e0    00000010     car_simulator.o (.rodata.str1.102105764285088297791)
+                  000028f0    00000010     car_simulator.o (.rodata.str1.118992156938753554691)
+                  00002900    00000010     car_simulator.o (.rodata.str1.20764963865596572161)
+                  00002910    00000010     car_simulator.o (.rodata.str1.53070505412086056811)
+                  00002920    00000010     car_simulator.o (.rodata.str1.96347363393662384581)
+                  00002930    0000000e     car_simulator.o (.rodata.str1.174970452910991146811)
+                  0000293e    0000000c     car_simulator.o (.rodata.str1.175731816989342926911)
+                  0000294a    00000003     car_simulator.o (.rodata.str1.19268430889025459361)
+                  0000294d    00000003     car_simulator.o (.rodata.str1.46977762550250390781)
+                  00002950    00000003     car_simulator.o (.rodata.str1.82113911413291390691)
+                  00002953    00000003     car_simulator.o (.rodata.str1.83493695140335691501)
+                  00002956    00000002     --HOLE-- [fill = 0]
+
+.init_array 
+*          0    00000000    00000000     UNINITIALIZED
+
+.binit     0    00000000    00000000     
+
+.sysmem    0    20200000    00000800     UNINITIALIZED
+                  20200000    00000010     libc.a : memory.c.obj (.sysmem)
+                  20200010    000007f0     --HOLE--
+
+.data      0    20200800    0000000b     UNINITIALIZED
+                  20200800    00000004     car_simulator.o (.data.g_Odometer)
+                  20200804    00000004     clock.o (.data.g_bus_clock_freq)
+                  20200808    00000001     lcd1602.o (.data.g_lcd_backlight_mode)
+                  20200809    00000001     car_simulator.o (.data.g_neutral)
+                  2020080a    00000001     car_simulator.o (.data.g_run)
+
+.bss       0    2020080c    00000002     UNINITIALIZED
+                  2020080c    00000002     (.common:g_motor_speed)
+
+.stack     0    20207e00    00000200     UNINITIALIZED
+                  20207e00    00000004     libc.a : boot_cortex_m.c.obj (.stack)
+                  20207e04    000001fc     --HOLE--
+
+__llvm_prf_cnts 
+*          0    20200000    00000000     UNINITIALIZED
+
+__llvm_prf_bits 
+*          0    20200000    00000000     UNINITIALIZED
+
+MODULE SUMMARY
+
+       Module                         code   ro data   rw data
+       ------                         ----   -------   -------
+    .\
+       car_simulator.o                3930   737       8      
+       LaunchPad.o                    1932   252       0      
+       lcd1602.o                      850    0         1      
+       clock.o                        520    0         4      
+       adc.o                          316    0         0      
+       uart.o                         288    0         0      
+    +--+------------------------------+------+---------+---------+
+       Total:                         7836   989       13     
+                                                              
+    .\ticlang\
+       startup_mspm0g3507_ticlang.o   12     192       0      
+    +--+------------------------------+------+---------+---------+
+       Total:                         12     192       0      
+                                                              
+    C:\ti\ccstheia141\ccs\tools\compiler\ti-cgt-armllvm_3.2.2.LTS\lib\armv6m-ti-none-eabi/c/libc.a
+       copy_decompress_lzss.c.obj     120    0         0      
+       autoinit.c.obj                 60     0         0      
+       boot_cortex_m.c.obj            40     0         0      
+       copy_zero_init.c.obj           22     0         0      
+       copy_decompress_none.c.obj     18     0         0      
+       memcpy16.S.obj                 18     0         0      
+       exit.c.obj                     4      0         0      
+       pre_init.c.obj                 4      0         0      
+    +--+------------------------------+------+---------+---------+
+       Total:                         286    0         0      
+                                                              
+    C:\ti\ccstheia141\ccs\tools\compiler\ti-cgt-armllvm_3.2.2.LTS\lib\clang/15.0.7/lib/armv6m-ti-none-eabi/libclang_rt.builtins.a
+       adddf3.S.obj                   402    0         0      
+       divdf3.S.obj                   268    0         0      
+       muldf3.S.obj                   228    0         0      
+       fixdfsi.S.obj                  74     0         0      
+       fixunsdfsi.S.obj               66     0         0      
+       aeabi_uidivmod.S.obj           64     0         0      
+       muldsi3.S.obj                  58     0         0      
+       floatsidf.S.obj                44     0         0      
+       floatunsidf.S.obj              36     0         0      
+       aeabi_memcpy.S.obj             8      0         0      
+       aeabi_div0.c.obj               2      0         0      
+    +--+------------------------------+------+---------+---------+
+       Total:                         1250   0         0      
+                                                              
+       Heap:                          0      0         2048   
+       Stack:                         0      0         512    
+       Linker Generated:              0      50        0      
+    +--+------------------------------+------+---------+---------+
+       Grand Total:                   9384   1231      2573   
+
+
+LINKER GENERATED COPY TABLES
+
+__TI_cinit_table @ 0000297c records: 2, size/record: 8, table size: 16
+	.data: load addr=00002958, load size=0000000e bytes, run addr=20200800, run size=0000000b bytes, compression=lzss
+	.bss: load addr=00002974, load size=00000008 bytes, run addr=2020080c, run size=00000002 bytes, compression=zero_init
+
+
+LINKER GENERATED HANDLER TABLE
+
+__TI_handler_table @ 00002968 records: 3, size/record: 4, table size: 12
+	index: 0, handler: __TI_decompress_lzss
+	index: 1, handler: __TI_decompress_none
+	index: 2, handler: __TI_zero_init
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address   name                          
+-------   ----                          
+00002561  ADC0_IRQHandler               
+00001d45  ADC0_in                       
+00000c61  ADC0_init                     
+00002561  ADC1_IRQHandler               
+00001dad  ADC1_in                       
+00000d35  ADC1_init                     
+00002561  AES_IRQHandler                
+00002570  C$$EXIT                       
+00002561  CANFD0_IRQHandler             
+00002561  DAC0_IRQHandler               
+00002561  DMA_IRQHandler                
+00002561  Default_Handler               
+00002561  GROUP0_IRQHandler             
+000018b5  GROUP1_IRQHandler             
+00002565  HardFault_Handler             
+00002561  I2C0_IRQHandler               
+00002561  I2C1_IRQHandler               
+000011f1  I2C_init                      
+00001821  I2C_send1                     
+00002561  NMI_Handler                   
+00001e71  OPA0_init                     
+00002561  PendSV_Handler                
+00002561  RTC_IRQHandler                
+00002569  Reset_Handler                 
+00002561  SPI0_IRQHandler               
+00002561  SPI1_IRQHandler               
+00002561  SVC_Handler                   
+00001f5d  SysTick_Handler               
+00002561  TIMA0_IRQHandler              
+00002561  TIMA1_IRQHandler              
+00002561  TIMG0_IRQHandler              
+00002561  TIMG12_IRQHandler             
+00002561  TIMG6_IRQHandler              
+00002561  TIMG7_IRQHandler              
+00002561  TIMG8_IRQHandler              
+000024c9  TI_memcpy_small               
+00002561  UART0_IRQHandler              
+00002561  UART1_IRQHandler              
+00002561  UART2_IRQHandler              
+00002561  UART3_IRQHandler              
+000023bd  UART_in_char                  
+00000e09  UART_init                     
+00002275  UART_out_char                 
+20208000  __STACK_END                   
+00000200  __STACK_SIZE                  
+00000800  __SYSMEM_SIZE                 
+00000000  __TI_ATRegion0_region_sz      
+00000000  __TI_ATRegion0_src_addr       
+00000000  __TI_ATRegion0_trg_addr       
+00000000  __TI_ATRegion1_region_sz      
+00000000  __TI_ATRegion1_src_addr       
+00000000  __TI_ATRegion1_trg_addr       
+00000000  __TI_ATRegion2_region_sz      
+00000000  __TI_ATRegion2_src_addr       
+00000000  __TI_ATRegion2_trg_addr       
+0000297c  __TI_CINIT_Base               
+0000298c  __TI_CINIT_Limit              
+0000298c  __TI_CINIT_Warm               
+00002968  __TI_Handler_Table_Base       
+00002974  __TI_Handler_Table_Limit      
+00002029  __TI_auto_init_nobinit_nopinit
+00001bed  __TI_decompress_lzss          
+000024db  __TI_decompress_none          
+ffffffff  __TI_pprof_out_hndl           
+ffffffff  __TI_prof_data_size           
+ffffffff  __TI_prof_data_start          
+00000000  __TI_static_base__            
+0000249d  __TI_zero_init_nomemset       
+00000647  __adddf3                      
+00001f11  __aeabi_d2iz                  
+00001fa5  __aeabi_d2uiz                 
+00000647  __aeabi_dadd                  
+00000a71  __aeabi_ddiv                  
+00000b7d  __aeabi_dmul                  
+0000063d  __aeabi_dsub                  
+000022cd  __aeabi_i2d                   
+000007cf  __aeabi_idiv0                 
+00002559  __aeabi_memcpy                
+00002559  __aeabi_memcpy4               
+00002559  __aeabi_memcpy8               
+00002375  __aeabi_ui2d                  
+00001fe9  __aeabi_uidiv                 
+00001fe9  __aeabi_uidivmod              
+ffffffff  __binit__                     
+00000a71  __divdf3                      
+00001f11  __fixdfsi                     
+00001fa5  __fixunsdfsi                  
+000022cd  __floatsidf                   
+00002375  __floatunsidf                 
+UNDEFED   __mpu_init                    
+00000b7d  __muldf3                      
+00002065  __muldsi3                     
+20207e00  __stack                       
+20200000  __start___llvm_prf_bits       
+20200000  __start___llvm_prf_cnts       
+20200000  __stop___llvm_prf_bits        
+20200000  __stop___llvm_prf_cnts        
+0000063d  __subdf3                      
+0000234d  _c_int00_noargs               
+20200000  _sys_memory                   
+UNDEFED   _system_post_cinit            
+0000256d  _system_pre_init              
+00002571  abort                         
+ffffffff  binit                         
+00001b71  byte_to_ascii                 
+000024ed  clock_delay                   
+000007d1  clock_init_40mhz              
+0000210d  config_pb1_interrupt          
+00002141  config_pb2_interrupt          
+00002648  dip_switch_config_data        
+00001ec5  dipsw_init                    
+000016d1  display_main_menu             
+00001945  display_radio_menu            
+00001c65  display_spotify_menu          
+000012ad  display_volume_menu           
+000025d8  enable_controls               
+20200800  g_Odometer                    
+20200804  g_bus_clock_freq              
+2020080c  g_motor_speed                 
+20200809  g_neutral                     
+2020080a  g_run                         
+0000254d  get_bus_clock_freq            
+00002774  iic_config_data               
+00000000  interruptVectors              
+000019d5  is_lpsw_down                  
+00001a61  is_lpsw_up                    
+000020a1  launchpad_gpio_init           
+00000fad  lcd1602_init                  
+00001071  lcd1602_write                 
+0000253d  lcd_clear                     
+000023dd  lcd_set_ddram_addr            
+000023fd  lcd_set_display_on            
+00002325  lcd_write_byte                
+00002455  lcd_write_char                
+00002245  lcd_write_quadbyte            
+00002399  lcd_write_string              
+00002578  led_config_data               
+0000246d  led_enable                    
+000014cd  led_init                      
+00001365  led_off                       
+00001419  led_on                        
+00000edd  leds_off                      
+0000278c  lp_switch_config_data         
+0000241d  lpsw_init                     
+00001779  main                          
+00002175  motor0_init                   
+000024fd  motor0_pwm_disable            
+0000250d  motor0_pwm_enable             
+00001579  motor0_pwm_init               
+000022f9  motor0_set_pwm_dc             
+00002485  motor1_init                   
+0000251d  motor1_pwm_disable            
+0000252d  motor1_pwm_enable             
+00001625  motor1_pwm_init               
+000024b5  motor1_set_pwm_count          
+000021a9  msec_delay                    
+00001cd5  quadbyte_to_ascii             
+0000048d  radio_menu_selected           
+000000c1  run_car_simulation            
+00000939  spotify_menu_selected         
+00002439  sys_tick_disable              
+000021dd  sys_tick_init                 
+00002211  terminal_string               
+00001131  volume_menu_selected          
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address   name                          
+-------   ----                          
+00000000  __TI_ATRegion0_region_sz      
+00000000  __TI_ATRegion0_src_addr       
+00000000  __TI_ATRegion0_trg_addr       
+00000000  __TI_ATRegion1_region_sz      
+00000000  __TI_ATRegion1_src_addr       
+00000000  __TI_ATRegion1_trg_addr       
+00000000  __TI_ATRegion2_region_sz      
+00000000  __TI_ATRegion2_src_addr       
+00000000  __TI_ATRegion2_trg_addr       
+00000000  __TI_static_base__            
+00000000  interruptVectors              
+000000c1  run_car_simulation            
+00000200  __STACK_SIZE                  
+0000048d  radio_menu_selected           
+0000063d  __aeabi_dsub                  
+0000063d  __subdf3                      
+00000647  __adddf3                      
+00000647  __aeabi_dadd                  
+000007cf  __aeabi_idiv0                 
+000007d1  clock_init_40mhz              
+00000800  __SYSMEM_SIZE                 
+00000939  spotify_menu_selected         
+00000a71  __aeabi_ddiv                  
+00000a71  __divdf3                      
+00000b7d  __aeabi_dmul                  
+00000b7d  __muldf3                      
+00000c61  ADC0_init                     
+00000d35  ADC1_init                     
+00000e09  UART_init                     
+00000edd  leds_off                      
+00000fad  lcd1602_init                  
+00001071  lcd1602_write                 
+00001131  volume_menu_selected          
+000011f1  I2C_init                      
+000012ad  display_volume_menu           
+00001365  led_off                       
+00001419  led_on                        
+000014cd  led_init                      
+00001579  motor0_pwm_init               
+00001625  motor1_pwm_init               
+000016d1  display_main_menu             
+00001779  main                          
+00001821  I2C_send1                     
+000018b5  GROUP1_IRQHandler             
+00001945  display_radio_menu            
+000019d5  is_lpsw_down                  
+00001a61  is_lpsw_up                    
+00001b71  byte_to_ascii                 
+00001bed  __TI_decompress_lzss          
+00001c65  display_spotify_menu          
+00001cd5  quadbyte_to_ascii             
+00001d45  ADC0_in                       
+00001dad  ADC1_in                       
+00001e71  OPA0_init                     
+00001ec5  dipsw_init                    
+00001f11  __aeabi_d2iz                  
+00001f11  __fixdfsi                     
+00001f5d  SysTick_Handler               
+00001fa5  __aeabi_d2uiz                 
+00001fa5  __fixunsdfsi                  
+00001fe9  __aeabi_uidiv                 
+00001fe9  __aeabi_uidivmod              
+00002029  __TI_auto_init_nobinit_nopinit
+00002065  __muldsi3                     
+000020a1  launchpad_gpio_init           
+0000210d  config_pb1_interrupt          
+00002141  config_pb2_interrupt          
+00002175  motor0_init                   
+000021a9  msec_delay                    
+000021dd  sys_tick_init                 
+00002211  terminal_string               
+00002245  lcd_write_quadbyte            
+00002275  UART_out_char                 
+000022cd  __aeabi_i2d                   
+000022cd  __floatsidf                   
+000022f9  motor0_set_pwm_dc             
+00002325  lcd_write_byte                
+0000234d  _c_int00_noargs               
+00002375  __aeabi_ui2d                  
+00002375  __floatunsidf                 
+00002399  lcd_write_string              
+000023bd  UART_in_char                  
+000023dd  lcd_set_ddram_addr            
+000023fd  lcd_set_display_on            
+0000241d  lpsw_init                     
+00002439  sys_tick_disable              
+00002455  lcd_write_char                
+0000246d  led_enable                    
+00002485  motor1_init                   
+0000249d  __TI_zero_init_nomemset       
+000024b5  motor1_set_pwm_count          
+000024c9  TI_memcpy_small               
+000024db  __TI_decompress_none          
+000024ed  clock_delay                   
+000024fd  motor0_pwm_disable            
+0000250d  motor0_pwm_enable             
+0000251d  motor1_pwm_disable            
+0000252d  motor1_pwm_enable             
+0000253d  lcd_clear                     
+0000254d  get_bus_clock_freq            
+00002559  __aeabi_memcpy                
+00002559  __aeabi_memcpy4               
+00002559  __aeabi_memcpy8               
+00002561  ADC0_IRQHandler               
+00002561  ADC1_IRQHandler               
+00002561  AES_IRQHandler                
+00002561  CANFD0_IRQHandler             
+00002561  DAC0_IRQHandler               
+00002561  DMA_IRQHandler                
+00002561  Default_Handler               
+00002561  GROUP0_IRQHandler             
+00002561  I2C0_IRQHandler               
+00002561  I2C1_IRQHandler               
+00002561  NMI_Handler                   
+00002561  PendSV_Handler                
+00002561  RTC_IRQHandler                
+00002561  SPI0_IRQHandler               
+00002561  SPI1_IRQHandler               
+00002561  SVC_Handler                   
+00002561  TIMA0_IRQHandler              
+00002561  TIMA1_IRQHandler              
+00002561  TIMG0_IRQHandler              
+00002561  TIMG12_IRQHandler             
+00002561  TIMG6_IRQHandler              
+00002561  TIMG7_IRQHandler              
+00002561  TIMG8_IRQHandler              
+00002561  UART0_IRQHandler              
+00002561  UART1_IRQHandler              
+00002561  UART2_IRQHandler              
+00002561  UART3_IRQHandler              
+00002565  HardFault_Handler             
+00002569  Reset_Handler                 
+0000256d  _system_pre_init              
+00002570  C$$EXIT                       
+00002571  abort                         
+00002578  led_config_data               
+000025d8  enable_controls               
+00002648  dip_switch_config_data        
+00002774  iic_config_data               
+0000278c  lp_switch_config_data         
+00002968  __TI_Handler_Table_Base       
+00002974  __TI_Handler_Table_Limit      
+0000297c  __TI_CINIT_Base               
+0000298c  __TI_CINIT_Limit              
+0000298c  __TI_CINIT_Warm               
+20200000  __start___llvm_prf_bits       
+20200000  __start___llvm_prf_cnts       
+20200000  __stop___llvm_prf_bits        
+20200000  __stop___llvm_prf_cnts        
+20200000  _sys_memory                   
+20200800  g_Odometer                    
+20200804  g_bus_clock_freq              
+20200809  g_neutral                     
+2020080a  g_run                         
+2020080c  g_motor_speed                 
+20207e00  __stack                       
+20208000  __STACK_END                   
+ffffffff  __TI_pprof_out_hndl           
+ffffffff  __TI_prof_data_size           
+ffffffff  __TI_prof_data_start          
+ffffffff  __binit__                     
+ffffffff  binit                         
+UNDEFED   __mpu_init                    
+UNDEFED   _system_post_cinit            
+
+[164 symbols]

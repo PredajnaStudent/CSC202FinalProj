@@ -12,6 +12,18 @@
             "type": "ccs-debug",
             "request": "launch",
             "project": "FinalProject_UartStarted"
+        },
+        {
+            "name": "documentation",
+            "type": "ccs-debug",
+            "request": "launch",
+            "project": "documentation"
+        },
+        {
+            "name": "FinalProject_UartFinished",
+            "type": "ccs-debug",
+            "request": "launch",
+            "project": "FinalProject_UartFinished"
         }
     ]
 }
